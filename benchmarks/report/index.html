@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Index - Criterion.rs</title>
+    <style type="text/css">
+        body {
+            font: 14px Helvetica Neue;
+            text-rendering: optimizelegibility;
+        }
+
+        .body {
+            width: 960px;
+            margin: auto;
+        }
+
+        a:link {
+            color: #1F78B4;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 36px;
+            font-weight: 300;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 300;
+        }
+
+        #footer {
+            height: 40px;
+            background: #888;
+            color: white;
+            font-size: larger;
+            font-weight: 300;
+        }
+
+        #footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        #footer p {
+            text-align: center
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #888;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="body">
+        <h2>Criterion.rs Benchmark Index</h2>
+        See individual benchmark pages below for more details.
+        <ul>
+            <li><a href="../blobs-insert/report/index.html">blobs-insert</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../blobs-insert/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../blobs-insert/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../blobs-insert/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../blobs-insert/1KiB/report/index.html">1KiB</a></th>
+                            <td><a href="../blobs-insert/nebari/1KiB/report/index.html">blobs-insert/nebari/1KiB</a></td>
+                            <td><a href="../blobs-insert/nebari-versioned/1KiB/report/index.html">blobs-insert/nebari-versioned/1KiB</a></td>
+                            <td><a href="../blobs-insert/sqlite/1KiB/report/index.html">blobs-insert/sqlite/1KiB</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../blobs-insert/1MiB/report/index.html">1MiB</a></th>
+                            <td><a href="../blobs-insert/nebari/1MiB/report/index.html">blobs-insert/nebari/1MiB</a></td>
+                            <td><a href="../blobs-insert/nebari-versioned/1MiB/report/index.html">blobs-insert/nebari-versioned/1MiB</a></td>
+                            <td><a href="../blobs-insert/sqlite/1MiB/report/index.html">blobs-insert/sqlite/1MiB</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../blobs-insert/64MiB/report/index.html">64MiB</a></th>
+                            <td><a href="../blobs-insert/nebari/64MiB/report/index.html">blobs-insert/nebari/64MiB</a></td>
+                            <td><a href="../blobs-insert/nebari-versioned/64MiB/report/index.html">blobs-insert/nebari-versioned/64MiB</a></td>
+                            <td><a href="../blobs-insert/sqlite/64MiB/report/index.html">blobs-insert/sqlite/64MiB</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-get-10k-rdm/report/index.html">logs-get-10k-rdm</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-get-10k-rdm/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-get-10k-rdm/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-get-10k-rdm/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-10k-rdm/1 row/report/index.html">1 row</a></th>
+                            <td><a href="../logs-get-10k-rdm/nebari/1 row/report/index.html">logs-get-10k-rdm/nebari/1 row</a></td>
+                            <td><a href="../logs-get-10k-rdm/nebari-versioned/1 row/report/index.html">logs-get-10k-rdm/nebari-versioned/1 row</a></td>
+                            <td><a href="../logs-get-10k-rdm/sqlite/1 row/report/index.html">logs-get-10k-rdm/sqlite/1 row</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-10k-rdm/100 rows/report/index.html">100 rows</a></th>
+                            <td><a href="../logs-get-10k-rdm/nebari/100 rows/report/index.html">logs-get-10k-rdm/nebari/100 rows</a></td>
+                            <td><a href="../logs-get-10k-rdm/nebari-versioned/100 rows/report/index.html">logs-get-10k-rdm/nebari-versioned/100 rows</a></td>
+                            <td><a href="../logs-get-10k-rdm/sqlite/100 rows/report/index.html">logs-get-10k-rdm/sqlite/100 rows</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-10k-rdm/625 rows/report/index.html">625 rows</a></th>
+                            <td><a href="../logs-get-10k-rdm/nebari/625 rows/report/index.html">logs-get-10k-rdm/nebari/625 rows</a></td>
+                            <td><a href="../logs-get-10k-rdm/nebari-versioned/625 rows/report/index.html">logs-get-10k-rdm/nebari-versioned/625 rows</a></td>
+                            <td><a href="../logs-get-10k-rdm/sqlite/625 rows/report/index.html">logs-get-10k-rdm/sqlite/625 rows</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-get-10k-seq/report/index.html">logs-get-10k-seq</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-get-10k-seq/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-get-10k-seq/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-get-10k-seq/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-10k-seq/1 row/report/index.html">1 row</a></th>
+                            <td><a href="../logs-get-10k-seq/nebari/1 row/report/index.html">logs-get-10k-seq/nebari/1 row</a></td>
+                            <td><a href="../logs-get-10k-seq/nebari-versioned/1 row/report/index.html">logs-get-10k-seq/nebari-versioned/1 row</a></td>
+                            <td><a href="../logs-get-10k-seq/sqlite/1 row/report/index.html">logs-get-10k-seq/sqlite/1 row</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-10k-seq/100 rows/report/index.html">100 rows</a></th>
+                            <td><a href="../logs-get-10k-seq/nebari/100 rows/report/index.html">logs-get-10k-seq/nebari/100 rows</a></td>
+                            <td><a href="../logs-get-10k-seq/nebari-versioned/100 rows/report/index.html">logs-get-10k-seq/nebari-versioned/100 rows</a></td>
+                            <td><a href="../logs-get-10k-seq/sqlite/100 rows/report/index.html">logs-get-10k-seq/sqlite/100 rows</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-10k-seq/625 rows/report/index.html">625 rows</a></th>
+                            <td><a href="../logs-get-10k-seq/nebari/625 rows/report/index.html">logs-get-10k-seq/nebari/625 rows</a></td>
+                            <td><a href="../logs-get-10k-seq/nebari-versioned/625 rows/report/index.html">logs-get-10k-seq/nebari-versioned/625 rows</a></td>
+                            <td><a href="../logs-get-10k-seq/sqlite/625 rows/report/index.html">logs-get-10k-seq/sqlite/625 rows</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-get-1k-rdm/report/index.html">logs-get-1k-rdm</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-get-1k-rdm/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-get-1k-rdm/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-get-1k-rdm/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1k-rdm/1 row/report/index.html">1 row</a></th>
+                            <td><a href="../logs-get-1k-rdm/nebari/1 row/report/index.html">logs-get-1k-rdm/nebari/1 row</a></td>
+                            <td><a href="../logs-get-1k-rdm/nebari-versioned/1 row/report/index.html">logs-get-1k-rdm/nebari-versioned/1 row</a></td>
+                            <td><a href="../logs-get-1k-rdm/sqlite/1 row/report/index.html">logs-get-1k-rdm/sqlite/1 row</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1k-rdm/32 rows/report/index.html">32 rows</a></th>
+                            <td><a href="../logs-get-1k-rdm/nebari/32 rows/report/index.html">logs-get-1k-rdm/nebari/32 rows</a></td>
+                            <td><a href="../logs-get-1k-rdm/nebari-versioned/32 rows/report/index.html">logs-get-1k-rdm/nebari-versioned/32 rows</a></td>
+                            <td><a href="../logs-get-1k-rdm/sqlite/32 rows/report/index.html">logs-get-1k-rdm/sqlite/32 rows</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1k-rdm/64 rows/report/index.html">64 rows</a></th>
+                            <td><a href="../logs-get-1k-rdm/nebari/64 rows/report/index.html">logs-get-1k-rdm/nebari/64 rows</a></td>
+                            <td><a href="../logs-get-1k-rdm/nebari-versioned/64 rows/report/index.html">logs-get-1k-rdm/nebari-versioned/64 rows</a></td>
+                            <td><a href="../logs-get-1k-rdm/sqlite/64 rows/report/index.html">logs-get-1k-rdm/sqlite/64 rows</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-get-1k-seq/report/index.html">logs-get-1k-seq</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-get-1k-seq/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-get-1k-seq/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-get-1k-seq/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1k-seq/1 row/report/index.html">1 row</a></th>
+                            <td><a href="../logs-get-1k-seq/nebari/1 row/report/index.html">logs-get-1k-seq/nebari/1 row</a></td>
+                            <td><a href="../logs-get-1k-seq/nebari-versioned/1 row/report/index.html">logs-get-1k-seq/nebari-versioned/1 row</a></td>
+                            <td><a href="../logs-get-1k-seq/sqlite/1 row/report/index.html">logs-get-1k-seq/sqlite/1 row</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1k-seq/32 rows/report/index.html">32 rows</a></th>
+                            <td><a href="../logs-get-1k-seq/nebari/32 rows/report/index.html">logs-get-1k-seq/nebari/32 rows</a></td>
+                            <td><a href="../logs-get-1k-seq/nebari-versioned/32 rows/report/index.html">logs-get-1k-seq/nebari-versioned/32 rows</a></td>
+                            <td><a href="../logs-get-1k-seq/sqlite/32 rows/report/index.html">logs-get-1k-seq/sqlite/32 rows</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1k-seq/64 rows/report/index.html">64 rows</a></th>
+                            <td><a href="../logs-get-1k-seq/nebari/64 rows/report/index.html">logs-get-1k-seq/nebari/64 rows</a></td>
+                            <td><a href="../logs-get-1k-seq/nebari-versioned/64 rows/report/index.html">logs-get-1k-seq/nebari-versioned/64 rows</a></td>
+                            <td><a href="../logs-get-1k-seq/sqlite/64 rows/report/index.html">logs-get-1k-seq/sqlite/64 rows</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-get-1m-rdm/report/index.html">logs-get-1m-rdm</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-get-1m-rdm/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-get-1m-rdm/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-get-1m-rdm/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1m-rdm/1 row/report/index.html">1 row</a></th>
+                            <td><a href="../logs-get-1m-rdm/nebari/1 row/report/index.html">logs-get-1m-rdm/nebari/1 row</a></td>
+                            <td><a href="../logs-get-1m-rdm/nebari-versioned/1 row/report/index.html">logs-get-1m-rdm/nebari-versioned/1 row</a></td>
+                            <td><a href="../logs-get-1m-rdm/sqlite/1 row/report/index.html">logs-get-1m-rdm/sqlite/1 row</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1m-rdm/1000 rows/report/index.html">1000 rows</a></th>
+                            <td><a href="../logs-get-1m-rdm/nebari/1000 rows/report/index.html">logs-get-1m-rdm/nebari/1000 rows</a></td>
+                            <td><a href="../logs-get-1m-rdm/nebari-versioned/1000 rows/report/index.html">logs-get-1m-rdm/nebari-versioned/1000 rows</a></td>
+                            <td><a href="../logs-get-1m-rdm/sqlite/1000 rows/report/index.html">logs-get-1m-rdm/sqlite/1000 rows</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1m-rdm/62500 rows/report/index.html">62500 rows</a></th>
+                            <td><a href="../logs-get-1m-rdm/nebari/62500 rows/report/index.html">logs-get-1m-rdm/nebari/62500 rows</a></td>
+                            <td><a href="../logs-get-1m-rdm/nebari-versioned/62500 rows/report/index.html">logs-get-1m-rdm/nebari-versioned/62500 rows</a></td>
+                            <td><a href="../logs-get-1m-rdm/sqlite/62500 rows/report/index.html">logs-get-1m-rdm/sqlite/62500 rows</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-get-1m-seq/report/index.html">logs-get-1m-seq</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-get-1m-seq/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-get-1m-seq/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-get-1m-seq/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1m-seq/1 row/report/index.html">1 row</a></th>
+                            <td><a href="../logs-get-1m-seq/nebari/1 row/report/index.html">logs-get-1m-seq/nebari/1 row</a></td>
+                            <td><a href="../logs-get-1m-seq/nebari-versioned/1 row/report/index.html">logs-get-1m-seq/nebari-versioned/1 row</a></td>
+                            <td><a href="../logs-get-1m-seq/sqlite/1 row/report/index.html">logs-get-1m-seq/sqlite/1 row</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1m-seq/1000 rows/report/index.html">1000 rows</a></th>
+                            <td><a href="../logs-get-1m-seq/nebari/1000 rows/report/index.html">logs-get-1m-seq/nebari/1000 rows</a></td>
+                            <td><a href="../logs-get-1m-seq/nebari-versioned/1000 rows/report/index.html">logs-get-1m-seq/nebari-versioned/1000 rows</a></td>
+                            <td><a href="../logs-get-1m-seq/sqlite/1000 rows/report/index.html">logs-get-1m-seq/sqlite/1000 rows</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-get-1m-seq/62500 rows/report/index.html">62500 rows</a></th>
+                            <td><a href="../logs-get-1m-seq/nebari/62500 rows/report/index.html">logs-get-1m-seq/nebari/62500 rows</a></td>
+                            <td><a href="../logs-get-1m-seq/nebari-versioned/62500 rows/report/index.html">logs-get-1m-seq/nebari-versioned/62500 rows</a></td>
+                            <td><a href="../logs-get-1m-seq/sqlite/62500 rows/report/index.html">logs-get-1m-seq/sqlite/62500 rows</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-insert-rdm/report/index.html">logs-insert-rdm</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-insert-rdm/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-insert-rdm/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-insert-rdm/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-insert-rdm/1 r_tx/report/index.html">1 r/tx</a></th>
+                            <td><a href="../logs-insert-rdm/nebari/1 r_tx/report/index.html">logs-insert-rdm/nebari/1 r/tx</a></td>
+                            <td><a href="../logs-insert-rdm/nebari-versioned/1 r_tx/report/index.html">logs-insert-rdm/nebari-versioned/1 r/tx</a></td>
+                            <td><a href="../logs-insert-rdm/sqlite/1 r_tx/report/index.html">logs-insert-rdm/sqlite/1 r/tx</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-insert-rdm/100 r_tx/report/index.html">100 r/tx</a></th>
+                            <td><a href="../logs-insert-rdm/nebari/100 r_tx/report/index.html">logs-insert-rdm/nebari/100 r/tx</a></td>
+                            <td><a href="../logs-insert-rdm/nebari-versioned/100 r_tx/report/index.html">logs-insert-rdm/nebari-versioned/100 r/tx</a></td>
+                            <td><a href="../logs-insert-rdm/sqlite/100 r_tx/report/index.html">logs-insert-rdm/sqlite/100 r/tx</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-insert-rdm/1000 r_tx/report/index.html">1000 r/tx</a></th>
+                            <td><a href="../logs-insert-rdm/nebari/1000 r_tx/report/index.html">logs-insert-rdm/nebari/1000 r/tx</a></td>
+                            <td><a href="../logs-insert-rdm/nebari-versioned/1000 r_tx/report/index.html">logs-insert-rdm/nebari-versioned/1000 r/tx</a></td>
+                            <td><a href="../logs-insert-rdm/sqlite/1000 r_tx/report/index.html">logs-insert-rdm/sqlite/1000 r/tx</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-insert-rdm/10000 r_tx/report/index.html">10000 r/tx</a></th>
+                            <td><a href="../logs-insert-rdm/nebari/10000 r_tx/report/index.html">logs-insert-rdm/nebari/10000 r/tx</a></td>
+                            <td><a href="../logs-insert-rdm/nebari-versioned/10000 r_tx/report/index.html">logs-insert-rdm/nebari-versioned/10000 r/tx</a></td>
+                            <td><a href="../logs-insert-rdm/sqlite/10000 r_tx/report/index.html">logs-insert-rdm/sqlite/10000 r/tx</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-insert-seq/report/index.html">logs-insert-seq</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-insert-seq/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-insert-seq/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-insert-seq/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-insert-seq/1 r_tx/report/index.html">1 r/tx</a></th>
+                            <td><a href="../logs-insert-seq/nebari/1 r_tx/report/index.html">logs-insert-seq/nebari/1 r/tx</a></td>
+                            <td><a href="../logs-insert-seq/nebari-versioned/1 r_tx/report/index.html">logs-insert-seq/nebari-versioned/1 r/tx</a></td>
+                            <td><a href="../logs-insert-seq/sqlite/1 r_tx/report/index.html">logs-insert-seq/sqlite/1 r/tx</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-insert-seq/100 r_tx/report/index.html">100 r/tx</a></th>
+                            <td><a href="../logs-insert-seq/nebari/100 r_tx/report/index.html">logs-insert-seq/nebari/100 r/tx</a></td>
+                            <td><a href="../logs-insert-seq/nebari-versioned/100 r_tx/report/index.html">logs-insert-seq/nebari-versioned/100 r/tx</a></td>
+                            <td><a href="../logs-insert-seq/sqlite/100 r_tx/report/index.html">logs-insert-seq/sqlite/100 r/tx</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-insert-seq/1000 r_tx/report/index.html">1000 r/tx</a></th>
+                            <td><a href="../logs-insert-seq/nebari/1000 r_tx/report/index.html">logs-insert-seq/nebari/1000 r/tx</a></td>
+                            <td><a href="../logs-insert-seq/nebari-versioned/1000 r_tx/report/index.html">logs-insert-seq/nebari-versioned/1000 r/tx</a></td>
+                            <td><a href="../logs-insert-seq/sqlite/1000 r_tx/report/index.html">logs-insert-seq/sqlite/1000 r/tx</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-insert-seq/10000 r_tx/report/index.html">10000 r/tx</a></th>
+                            <td><a href="../logs-insert-seq/nebari/10000 r_tx/report/index.html">logs-insert-seq/nebari/10000 r/tx</a></td>
+                            <td><a href="../logs-insert-seq/nebari-versioned/10000 r_tx/report/index.html">logs-insert-seq/nebari-versioned/10000 r/tx</a></td>
+                            <td><a href="../logs-insert-seq/sqlite/10000 r_tx/report/index.html">logs-insert-seq/sqlite/10000 r/tx</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-scan-10k-rdm/report/index.html">logs-scan-10k-rdm</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-scan-10k-rdm/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-scan-10k-rdm/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-scan-10k-rdm/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-10k-rdm/100 elements/report/index.html">100 elements</a></th>
+                            <td><a href="../logs-scan-10k-rdm/nebari/100 elements/report/index.html">logs-scan-10k-rdm/nebari/100 elements</a></td>
+                            <td><a href="../logs-scan-10k-rdm/nebari-versioned/100 elements/report/index.html">logs-scan-10k-rdm/nebari-versioned/100 elements</a></td>
+                            <td><a href="../logs-scan-10k-rdm/sqlite/100 elements/report/index.html">logs-scan-10k-rdm/sqlite/100 elements</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-10k-rdm/625 elements/report/index.html">625 elements</a></th>
+                            <td><a href="../logs-scan-10k-rdm/nebari/625 elements/report/index.html">logs-scan-10k-rdm/nebari/625 elements</a></td>
+                            <td><a href="../logs-scan-10k-rdm/nebari-versioned/625 elements/report/index.html">logs-scan-10k-rdm/nebari-versioned/625 elements</a></td>
+                            <td><a href="../logs-scan-10k-rdm/sqlite/625 elements/report/index.html">logs-scan-10k-rdm/sqlite/625 elements</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-scan-10k-seq/report/index.html">logs-scan-10k-seq</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-scan-10k-seq/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-scan-10k-seq/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-scan-10k-seq/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-10k-seq/100 elements/report/index.html">100 elements</a></th>
+                            <td><a href="../logs-scan-10k-seq/nebari/100 elements/report/index.html">logs-scan-10k-seq/nebari/100 elements</a></td>
+                            <td><a href="../logs-scan-10k-seq/nebari-versioned/100 elements/report/index.html">logs-scan-10k-seq/nebari-versioned/100 elements</a></td>
+                            <td><a href="../logs-scan-10k-seq/sqlite/100 elements/report/index.html">logs-scan-10k-seq/sqlite/100 elements</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-10k-seq/625 elements/report/index.html">625 elements</a></th>
+                            <td><a href="../logs-scan-10k-seq/nebari/625 elements/report/index.html">logs-scan-10k-seq/nebari/625 elements</a></td>
+                            <td><a href="../logs-scan-10k-seq/nebari-versioned/625 elements/report/index.html">logs-scan-10k-seq/nebari-versioned/625 elements</a></td>
+                            <td><a href="../logs-scan-10k-seq/sqlite/625 elements/report/index.html">logs-scan-10k-seq/sqlite/625 elements</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-scan-1k-rdm/report/index.html">logs-scan-1k-rdm</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-scan-1k-rdm/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-scan-1k-rdm/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-scan-1k-rdm/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-1k-rdm/32 elements/report/index.html">32 elements</a></th>
+                            <td><a href="../logs-scan-1k-rdm/nebari/32 elements/report/index.html">logs-scan-1k-rdm/nebari/32 elements</a></td>
+                            <td><a href="../logs-scan-1k-rdm/nebari-versioned/32 elements/report/index.html">logs-scan-1k-rdm/nebari-versioned/32 elements</a></td>
+                            <td><a href="../logs-scan-1k-rdm/sqlite/32 elements/report/index.html">logs-scan-1k-rdm/sqlite/32 elements</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-1k-rdm/64 elements/report/index.html">64 elements</a></th>
+                            <td><a href="../logs-scan-1k-rdm/nebari/64 elements/report/index.html">logs-scan-1k-rdm/nebari/64 elements</a></td>
+                            <td><a href="../logs-scan-1k-rdm/nebari-versioned/64 elements/report/index.html">logs-scan-1k-rdm/nebari-versioned/64 elements</a></td>
+                            <td><a href="../logs-scan-1k-rdm/sqlite/64 elements/report/index.html">logs-scan-1k-rdm/sqlite/64 elements</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-scan-1k-seq/report/index.html">logs-scan-1k-seq</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-scan-1k-seq/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-scan-1k-seq/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-scan-1k-seq/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-1k-seq/32 elements/report/index.html">32 elements</a></th>
+                            <td><a href="../logs-scan-1k-seq/nebari/32 elements/report/index.html">logs-scan-1k-seq/nebari/32 elements</a></td>
+                            <td><a href="../logs-scan-1k-seq/nebari-versioned/32 elements/report/index.html">logs-scan-1k-seq/nebari-versioned/32 elements</a></td>
+                            <td><a href="../logs-scan-1k-seq/sqlite/32 elements/report/index.html">logs-scan-1k-seq/sqlite/32 elements</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-1k-seq/64 elements/report/index.html">64 elements</a></th>
+                            <td><a href="../logs-scan-1k-seq/nebari/64 elements/report/index.html">logs-scan-1k-seq/nebari/64 elements</a></td>
+                            <td><a href="../logs-scan-1k-seq/nebari-versioned/64 elements/report/index.html">logs-scan-1k-seq/nebari-versioned/64 elements</a></td>
+                            <td><a href="../logs-scan-1k-seq/sqlite/64 elements/report/index.html">logs-scan-1k-seq/sqlite/64 elements</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-scan-1m-rdm/report/index.html">logs-scan-1m-rdm</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-scan-1m-rdm/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-scan-1m-rdm/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-scan-1m-rdm/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-1m-rdm/1000 elements/report/index.html">1000 elements</a></th>
+                            <td><a href="../logs-scan-1m-rdm/nebari/1000 elements/report/index.html">logs-scan-1m-rdm/nebari/1000 elements</a></td>
+                            <td><a href="../logs-scan-1m-rdm/nebari-versioned/1000 elements/report/index.html">logs-scan-1m-rdm/nebari-versioned/1000 elements</a></td>
+                            <td><a href="../logs-scan-1m-rdm/sqlite/1000 elements/report/index.html">logs-scan-1m-rdm/sqlite/1000 elements</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-1m-rdm/62500 elements/report/index.html">62500 elements</a></th>
+                            <td><a href="../logs-scan-1m-rdm/nebari/62500 elements/report/index.html">logs-scan-1m-rdm/nebari/62500 elements</a></td>
+                            <td><a href="../logs-scan-1m-rdm/nebari-versioned/62500 elements/report/index.html">logs-scan-1m-rdm/nebari-versioned/62500 elements</a></td>
+                            <td><a href="../logs-scan-1m-rdm/sqlite/62500 elements/report/index.html">logs-scan-1m-rdm/sqlite/62500 elements</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <li><a href="../logs-scan-1m-seq/report/index.html">logs-scan-1m-seq</a></li>
+            
+            <ul>
+                <li>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th><a href="../logs-scan-1m-seq/nebari/report/index.html">nebari</a></th>
+                            <th><a href="../logs-scan-1m-seq/nebari-versioned/report/index.html">nebari-versioned</a></th>
+                            <th><a href="../logs-scan-1m-seq/sqlite/report/index.html">sqlite</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-1m-seq/1000 elements/report/index.html">1000 elements</a></th>
+                            <td><a href="../logs-scan-1m-seq/nebari/1000 elements/report/index.html">logs-scan-1m-seq/nebari/1000 elements</a></td>
+                            <td><a href="../logs-scan-1m-seq/nebari-versioned/1000 elements/report/index.html">logs-scan-1m-seq/nebari-versioned/1000 elements</a></td>
+                            <td><a href="../logs-scan-1m-seq/sqlite/1000 elements/report/index.html">logs-scan-1m-seq/sqlite/1000 elements</a></td>
+                        </tr>
+                        <tr>
+                            <th><a href="../logs-scan-1m-seq/62500 elements/report/index.html">62500 elements</a></th>
+                            <td><a href="../logs-scan-1m-seq/nebari/62500 elements/report/index.html">logs-scan-1m-seq/nebari/62500 elements</a></td>
+                            <td><a href="../logs-scan-1m-seq/nebari-versioned/62500 elements/report/index.html">logs-scan-1m-seq/nebari-versioned/62500 elements</a></td>
+                            <td><a href="../logs-scan-1m-seq/sqlite/62500 elements/report/index.html">logs-scan-1m-seq/sqlite/62500 elements</a></td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div id="footer">
+        <p>This report was generated by
+            <a href="https://github.com/bheisler/criterion.rs">Criterion.rs</a>, a statistics-driven benchmarking
+            library in Rust.</p>
+    </div>
+</body>
+</html>
